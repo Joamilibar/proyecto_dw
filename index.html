@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
-<body class="body">
+<body>
     <header><!--INICIO HEADER-->
         <div class="top_bar">    
             <div>    
@@ -27,69 +27,118 @@
                 </div>
             </div>
         </div>
-        <div>
-            <nav class="header_nav"> <!--BARRA NAVEGACIÓN-->
+        <div class="nav">
+            <div class="logo">
                 <img src="./assets/img/logo_B&D.png" alt="Logo B&D Barra Navegación">
+            </div>
+            <nav class="header_nav"> <!--BARRA NAVEGACIÓN-->
                 <ul class="navbar">
+                    <li><a href="./index.html">Inicio</a></li>
                     <li><a href="./pages/quienes_somos.html">¿Quiénes Somos?</a></li>
                     <li><a href="./pages/tienda_online.html">Tienda Online</a></li>
                     <li><a href="./pages/hoteles.html">Hoteles</a></li>
                     <li><a href="./pages/contacto.html">Contacto</a></li>
                 </ul>
-            </nav>
+            
         </div>
+        <section class="principal_section">
 
+        </section>
+        <br>
     </header>
     
     <!--INICIO MAIN-->
     <main>
-        <section class="principal_section">
+        <section class="cuerpo">
             <div>
-                <div>
-                    <img src="" alt="">
+                <div class="titulo_productos_destacados">
+                    <h2>Productos Destacados</h2>
                 </div>
-            </div>
-            <div>
-                <div>
-                    <img src="" alt="">
+                <div class="cards_grid">
+                    <article class="card">
+                        <div><img src="./assets/img/cama_crucero.jpg" alt=""></div>
+                        <h4>Cama 1</h4>
+                        <p>Descripción del producto y detalles de fabricación.</p>
+                    </article>
+                    <article class="card">
+                        <div><img src="./assets/img/cama_crucero.jpg" alt=""></div>
+                        <h4>Cama 2</h4>
+                        <p>Descripción del producto y detalles de fabricación.</p>
+                    </article>
+                    <article class="card">
+                        <div><img src="./assets/img/cama_crucero.jpg" alt=""></div>
+                        <h4>Cama 3</h4>
+                        <p>Descripción del producto y detalles de fabricación.</p>
+                    </article>
+                    <article class="card">
+                        <div><img src="./assets/img/cama_crucero.jpg" alt=""></div>
+                        <h4>Cama 4</h4>
+                        <p>Descripción del producto y detalles de fabricación.</p>
+                    </article>
                 </div>
-            </div>
-            <div>
-                <div>
-                    <img src="" alt="">
-                </div>
-            </div>
-            <div>
-                <div>
-                    <img src="" alt="">
-                </div>
-            </div>
-            <div>
-                <div>
-                    <img src="" alt="">
-                </div>
-            </div>
-            <div>
-                <div>
-                    <img src="" alt="">
-                </div>
-            </div>
-            <div>
-                <div>
-                    <img src="" alt="">
-                </div>
-            </div>
-            <div>
-                <div>
-                    <img src="" alt="">
-                </div>
-            </div>
-
+        
+                <section class="ubicacion">
+                    <div class="como_llegar">
+                        <h2>Cómo llegar</h2>
+                    </div>
+                    <div class="mapa">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3331.2150277742076!2d-70.55163962340005!3d-33.39155389449998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662ceb5e1b00909%3A0x6a649dbd6faf0321!2sLas%20Vizcachas%2C%20Las%20Condes%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1sen!2scl!4v1689472879516!5m2!1sen!2scl"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </section>
         </section>
+        <br>
     </main>
 
     <!--INICIO FOOTER-->
     <footer>
+        <section class="cards_footer_grid">
+            <div class="foot1">
+                <span class="titulo_cf">
+                    <P>Localización:</P>
+                </span>
+                <span>
+                    <p>Calle Las Vizcachas</p>
+                    <p>Número 2 26</p>
+                    <p>Local 2-B</p>
+                    <p>Las Condes.</p>
+                    <p>Santiago. Metropolitana.</p>
+            </div>
+            <div class="foot2">
+                <span class="titulo_cf">
+                    <P>Contácto:</P>
+                </span>
+                <span>
+                    <p>+56 9 9999 9999</p>
+                    <p>+56 2 2222 2222</p>
+                    <p>Local 2-B</p>
+                    <p>Correo:</p>
+                    <p>ventas@bedanddreams.cl</p>
+            </div>
+            <div class="foot3">
+                <span class="titulo_cf">
+                    <p>Información:</p>
+                </span>
+                <span>
+                    <p>Cambios y Devoluciones</p>
+                    <p>Cómo Comprar</p>
+                    <p>Local 2-B</p>
+                    <p>Cómo Pagar</p>
+            </div>
+            <div class="foot4">
+                <span class="titulo_cf">
+                    <p>Mi Cuenta:</p>
+                </span>
+                <span>
+                    <p>Registrarme</p>
+                    <br>
+                    <p>Iniciar Sesión</p>
+            </div>
+        </section>
+
+    </footer>
 
     </footer>
 </body>
