@@ -1,0 +1,50 @@
+.cuerpo_tienda{
+    justify-content: center;    
+}
+
+
+.t_productos_tienda {
+    padding: 1.25rem 0rem 5rem 0rem;
+    h2{
+        display: flex;
+        justify-content: center;
+    }
+}   
+
+.tienda_prod {
+    display: grid;
+    grid-auto-rows: 22rem;
+    grid-template-rows: repeat(auto-fill, minmax(15rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));   
+    background-color: #F2EFE9;
+    justify-content: center;
+    gap: 1.25rem;
+    padding: 5% 10%;
+    overflow: scroll;
+}
+
+        
+.t_cards {
+    display: grid;
+    justify-content: center;
+
+    div {
+
+        img {
+            display: grid;
+            width: 100%;
+            padding: 10%;
+        }
+    }
+
+    h4 {
+        display: grid;
+        justify-content: center;
+    }
+
+    p {
+        display: grid;
+        position: sticky;
+        text-align: center;
+    }
+}

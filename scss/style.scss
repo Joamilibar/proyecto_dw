@@ -1,0 +1,19 @@
+@import "./utilities/variables";
+@import "./base/reset";
+@import "./base/typo";
+@import "./layout/header";
+@import "./layout/main-index";
+@import "./layout/footer";
+@import "./layout/z-mediaquery";
+
+/** PAGINA HOTELES**/
+@import "./layout/main-hoteles";
+
+/** PAGINA TIENDA **/ 
+@import "./layout/main-tienda";
+
+/** PAGINA CONTACTO **/
+@import "./layout/main-contacto";
+
+/** PAGINA QUIENES SOMOS **/
+@import "./layout/quienes-somos";
