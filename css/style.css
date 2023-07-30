@@ -1,498 +1,401 @@
+@charset "UTF-8";
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 @font-face {
-    font-family: 'Cormorant Garamond', serif;
-    ;
-    src: url(../assets/fonts/Cormorant_Garamond/CormorantGaramond-Regular.ttf);
-}
-
-.body {
-    background-color: #F2EFE9;
-    background-size: contain;
-}
-
-
+  font-family: 'Cormorant Garamond', serif;
+  src: url(../assets/fonts/Cormorant_Garamond/CormorantGaramond-Regular.ttf); }
 
 .top_bar {
-    display: flexbox;
-    align-content: baseline;
-    padding: .3125rem .3125rem;
-    background-color: #728CBD;
-    font-size: 1rem;
-    color: #ffffff;
-}
+  display: flexbox;
+  align-content: baseline;
+  padding: .3125rem .3125rem;
+  background-color: #728CBD;
+  font-size: 1rem;
+  color: #ffffff; }
 
 .tb_left {
-    float: left;
-    display: flex;
-    align-items: baseline;
-    margin-top: .1875rem;
-
-}
+  float: left;
+  display: flex;
+  align-items: baseline;
+  margin-top: .1875rem; }
 
 .tb_left img {
-    display: flex;
-    justify-content: center;
-    margin: 0rem .1875rem;
-    flex
-}
+  display: flex;
+  justify-content: center;
+  margin: 0rem .1875rem; }
 
 .tb_left span {
-    padding-left: .0625rem .125rem .0625rem .125rem;
-    font-size: .875rem;
-
-}
-
+  padding-left: .0625rem .125rem .0625rem .125rem;
+  font-size: .875rem; }
 
 .rrss {
-    display: flex;
-    align-items: center;
-    justify-content: right;
-
-}
+  display: flex;
+  align-items: center;
+  justify-content: right; }
 
 .rrss ul {
-    display: flex;
-    flex-direction: row;
-
-}
-
-
+  display: flex;
+  flex-direction: row; }
 
 .rrss ul li {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: row;
-    padding-top: 0rem;
-    width: auto;
-    height: auto;
-}
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  padding-top: 0rem;
+  width: auto;
+  height: auto; }
 
 .rrss ul li a img {
-    display: flex;
-    justify-content: end;
-    padding: .1875rem;
-}
-
+  display: flex;
+  justify-content: end;
+  padding: .1875rem; }
 
 .nav {
-    display: flex;
-    padding: .625rem 0rem;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: .625rem 0rem;
-}
-
-
+  display: flex;
+  padding: .625rem 0rem;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: .625rem 0rem 3.125rem 0rem; }
 
 .logo img {
-    max-height: 3.75rem;
-}
+  max-height: 3.75rem; }
 
 .navbar {
-    list-style: none;
-    align-items: center;
-    font-size: 1.25rem;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    row-gap: 1.25rem;
-    column-gap: ;
-}
+  list-style: none;
+  align-items: center;
+  font-size: 1.25rem;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  row-gap: 1.25rem; }
 
 .navbar li a:hover {
-    color: grey;
-    text-shadow: .125rem .125rem .125rem lightblue;
-}
+  color: grey;
+  text-shadow: .125rem .125rem .125rem lightblue; }
 
 /* BANNER PÁGINA PRINCIPAL */
-
 .principal_section {
-    display: flex;
-    background-image: url(../assets/img/banner_cama.jpg);
-    width: 100%;
-    height: 100dvh;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-}
-
-
+  display: flex;
+  background-image: url(../assets/img/banner_cama.jpg);
+  width: 100%;
+  height: 100dvh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; }
 
 /* TARJETAS PRODUCTOS*/
-
 .titulo_productos_destacados {
-    display: flex;
-    justify-content: center;
-    padding: 3.125rem 0rem 1.875rem 0rem;
-}
-
+  display: flex;
+  justify-content: center;
+  padding: 3.125rem 0rem 1.875rem 0rem; }
 
 .cards_grid {
-    display: grid;
-    grid-auto-rows: 22rem;
-    grid-template-rows: repeat(auto-fill, minmax(15rem, 1fr));
-    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-    /*grid-template-areas: 
-    ".    col1 col1 col1 col1 .    "
-    ".    col2 col3 col4 col5 .    "
-    ".    col6 col7 col8 col9 .    "
-    ;*/
-    background-color: #F2EFE9;
-    justify-content: center;
-    gap: 1.25rem;
-    padding: 5% 10%;
-}
+  display: grid;
+  grid-auto-rows: 22rem;
+  grid-template-rows: repeat(auto-fill, minmax(15rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  background-color: #F2EFE9;
+  justify-content: center;
+  gap: 1.25rem;
+  padding: 5% 10%; }
 
-.cuerpo {
-    justify-content: center;
-}
-
-.cards_grid div{
-
-}
-
-.cards_grid div img {
-    display: grid;
-    width: 100%;
-    padding: 10%;
-}
+.card div img {
+  display: grid;
+  width: 100%;
+  padding: 10%; }
 
 .titulo_pd {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-column-start: 3;
-    grid-column-end: 5;
-}
-
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-column-start: 3;
+  grid-column-end: 5; }
 
 .card_image {
-    overflow: scroll;
-}
+  overflow: scroll; }
 
-.cards_grid article h4{
-    display: grid;
-    justify-content: center;
-}
-
+.cards_grid article h4 {
+  display: grid;
+  justify-content: center; }
 
 .card p {
-    position: fixed;
-}
+  display: grid;
+  background-size: contain;
+  text-align: center; }
 
 /* SECCION COMO LLEGAR (ubicacion) */
-
-
 .como_llegar {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 3.125rem 0rem 1.875rem 0rem;
-}
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 3.125rem 0rem 1.875rem 0rem; }
 
 .mapa {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 3.125rem 0rem 1.875rem 0rem;
-    position: relative;
-}
-
-
-/** PAGINA "QUIENES SOLOS"  **/
-
-.principal_section_quienes_somos{
-    display: flexbox;    
-    width: 100%;    
-    justify-items: center;
-}
-
-.titulo_quienes_somos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 5%;
-    padding-bottom: 2%;
-    font-size: 1.25rem;
-}
-
-.video_quienes_somos{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-    padding: 30%;
-}
-
-.video_quienes_somos iframe{
-    align-items: center;
-    position: -ms-page;
-}
-
-.video_intro{
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 3.125rem;    
-    width: 80%;
-    height: 100%;
-    border: 0;
-}
-
-.descrip_quienes_somos{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    justify-content: center;
-    align-items: center;    
-    padding: 6.25rem 6.25rem;
-}
-
-.descrip_quienes_somos p{
-    text-align: center;
-    font-size: 1.125rem;    
-}
-
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 3.125rem 0rem 4.375rem 0rem;
+  position: relative; }
 
 /* FOOTER (TARJETAS DEL PIE DE PAGINA) */
-
 footer {
-    background-color: #728CBD;
-    background-size: contain;
-    overflow: hidden;
-
-}
+  background-color: #728CBD;
+  height: 10%;
+  margin-top: 3.125rem;
+  overflow: hidden; }
 
 .cards_footer_grid {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(1, 1fr);
-    grid-template-areas:
-        ".  col1   col2    col3    col4 .   "
-    ;
-    padding: 3%;
-    justify-items: center;
-    color: white;
-    
-}
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-areas: ".  col1   col2    col3    col4 .   ";
+  margin: 5% 0rem 5% 0rem;
+  justify-items: center;
+  color: white;
+  font-size: minmax(0.875rem, 1rem);
+  height: fit-content; }
 
 .cards_footer_grid div {
-    display: grid;
-    align-items: center;
-    padding: 0rem .625rem 0rem .625rem;
-}
+  display: grid;
+  align-items: center;
+  padding: 0rem .3125rem 0rem .3125rem; }
+  .cards_footer_grid div p {
+    margin: 0rem; }
 
 .titulo_cf {
-    text-justify: center;
-    text-decoration: underline;
-    font-size: 1.125rem;
-    padding: .3125rem 0rem .3125rem 0rem;
-}
+  text-justify: center;
+  text-decoration: underline;
+  font-size: 1.125rem;
+  padding: .3125rem 0rem .3125rem 0rem; }
 
 .foot1 {
-    grid-area: col1;
-    background-color: rgb(72, 75, 80);
-    align-items: center;
-    text-align: center;
-    height: 10rem;
-    width: 11.875rem;
-    
-
-}
+  grid-area: col1;
+  background-color: #484b50;
+  background-size: contain;
+  align-items: center;
+  text-align: center;
+  width: 11.875rem; }
 
 .foot2 {
-    grid-area: col2;
-    background-color: rgb(72, 75, 80);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 10rem;
-    width: 11.875rem;
-}
+  grid-area: col2;
+  background-color: #484b50;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 11.875rem; }
 
 .foot3 {
-    grid-area: col3;
-    background-color: rgb(72, 75, 80);
-    align-items: center;
-    text-align: center;
-    height: 10rem;
-    width: 11.875rem;
-}
+  grid-area: col3;
+  background-color: #484b50;
+  align-items: center;
+  text-align: center;
+  width: 11.875rem; }
 
 .foot4 {
-    grid-area: col4;
-    background-color: rgb(72, 75, 80);
-    align-items: center;
-    text-align: center;
-    height: 10rem;
-    width: 11.875rem;
-}
+  grid-area: col4;
+  background-color: #484b50;
+  text-align: center;
+  width: 11.875rem; }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*FINAL DEL  CÓDIGO */
-
-
-
+/** MEDIA QUERY **/
 /* Responsive 1024 (ANCHO) */
+@media (max-width: 1024px) {
+  .principal_section {
+    height: 37.5rem; }
+  .cards_footer_grid {
+    gap: 2% 1%; }
+  .cards_footer_grid div {
+    padding: .9375rem; }
+  .mapa iframe {
+    width: 90%;
+    height: 18.75rem; } }
 
-@media (max-width:1024px) {
-    .principal_section{
-        height: 43.75rem;
-    }
-    .cards_footer_grid{
-        gap: 2% 1%;
-    }
-    .cards_footer_grid div{
-        padding: .9375rem;
-    }
-}
-
-
-
-
-@media (max-width:768px) {
-    .principal_section{
-        height: 37.5rem;
-    }
-    .cuerpo {
-        width: 100vw;
-    }
-    footer{
-        width: 100vw;
-        height: 25rem;
-    }
-    .cards_footer_grid{
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-areas:
-            ".  col1   col2     ."
-            ".  col3    col4    ."
-    ;
-    }
-    
-    .cards_footer_grid div article{
-        grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-    }
-}
+@media (max-width: 768px) {
+  .principal_section {
+    height: 60vmin; }
+  .mapa iframe {
+    width: 90%;
+    height: 14.0625rem; }
+  .cuerpo {
+    width: 100vw; }
+  footer {
+    width: 100vw;
+    height: 31.25rem; }
+  .cards_footer_grid {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: ".  col1   col2     ." ".  col3    col4    ."; }
+  .cards_footer_grid div article {
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); } }
 
 /* Mobile Responsive 425 (ANCHO) */
-
-@media(max-width:425px) {  
-    .logo{
-        padding-bottom: 5%;
-    }
-    .principal_section{
-        height: 100vmin;
-    }
-        .cuerpo {
-            width: 100vw;
-        }
-            .nav {
-                flex-direction: column;
-                .navbar {
-                    flex-direction: column;
-        foofter{
-                    .cards_footer_grid{
-            grid-template-rows: repeat(2, 1fr);
-            grid-template-areas:
-            ".  col1   col2     ."
-            ".  col3    col4    ."
-    ;
-}
-        }
-                }
-            }
-            .descrip_quienes_somos{
-            padding: 3.125rem 3.125rem;
-        }
-        }
-    
+@media (max-width: 425px) {
+  .logo {
+    padding-bottom: 5%; }
+  .principal_section {
+    height: 60vmin; }
+  .cuerpo {
+    width: 100vw; }
+  .nav {
+    flex-direction: column; }
+    .nav .navbar {
+      flex-direction: column; }
+    .nav .mapa iframe {
+      width: 15.625rem;
+      height: 14.0625rem; }
+    .nav footer {
+      height: min-content; }
+    .nav .cards_footer_grid {
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: ".  col1   col2     ." ".  col3    col4    ."; }
+  div.descrip_quienes_somos {
+    margin: 10%;
+    padding: 0%; }
+    div.descrip_quienes_somos div p {
+      font-size: 1rem; } }
 
 /* Mobile Responsive 375 (ANCHO) */
-
-@media (max-width:375px){
-    footer{
-        width: 100vw;
-        height: 43.75rem;
-    }
-    .cards_footer_grid{
-        grid-template-rows: repeat(4, 1fr);
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-areas:
-            "col1"
-            "col2"
-            "col3"
-            "col4"
-        ;
-    }
-
-
-}
-
+@media (max-width: 375px) {
+  .mapa iframe {
+    width: 90%;
+    height: 14.0625rem; }
+  footer {
+    width: 100vw;
+    height: max-content; }
+  .cards_footer_grid {
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "col1" "col2" "col3" "col4"; } }
 
 /* Mobile Responsive 320 (ANCHO) */
+@media (max-width: 320px) {
+  .mapa iframe {
+    width: 90%;
+    height: 14.0625rem; }
+  .principal_section {
+    height: 60vmin; }
+  footer {
+    width: 100vw;
+    height: max-content; }
+  .cards_footer_grid {
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "col1" "col2" "col3" "col4"; }
+  .video_intro {
+    width: 18.75rem; } }
 
-@media (max-width:320px) {
-    .mapa iframe{
-        width: 18.75rem;
-        height: 14.0625rem;
-    }
-    .principal_section{
-        height: 18.75rem;
-    }
-    .cuerpo {
-        
-    }
-    footer{
-        width: 100vw;
-        height: 43.75rem;
-    }
-    .cards_footer_grid{
-        grid-template-rows: repeat(4, 1fr);
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-areas:
-            "col1"
-            "col2"
-            "col3"
-            "col4"
-        ;
-    }
-    .titulo_quienes_somos{
-        
-    }
-    .video_intro{
-        width: 18.75rem;
-    }
+/** PAGINA HOTELES**/
+.main_section_hoteles {
+  display: flex;
+  with: 100%;
+  padding-left: 15%;
+  padding-right: 15%; }
+
+.hotel_1 div img {
+  max-height: 12.5rem; }
+
+.hotel_2 div img {
+  max-height: 12.5rem; }
+
+.hotel_3 img {
+  max-height: 12.5rem; }
+
+.hotel_4 img {
+  max-height: 12.5rem; }
+
+/*
+div{
+    max-height: 6.25rem;
 }
+*/
+/** PAGINA TIENDA **/
+.cuerpo_tienda {
+  justify-content: center; }
+
+.t_productos_tienda {
+  padding: 1.25rem 0rem 5rem 0rem; }
+  .t_productos_tienda h2 {
+    display: flex;
+    justify-content: center; }
+
+.tienda_prod {
+  display: grid;
+  grid-auto-rows: 22rem;
+  grid-template-rows: repeat(auto-fill, minmax(15rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  background-color: #F2EFE9;
+  justify-content: center;
+  gap: 1.25rem;
+  padding: 5% 10%;
+  overflow: scroll; }
+
+.t_cards {
+  display: grid;
+  justify-content: center; }
+  .t_cards div img {
+    display: grid;
+    width: 100%;
+    padding: 10%; }
+  .t_cards h4 {
+    display: grid;
+    justify-content: center; }
+  .t_cards p {
+    display: grid;
+    position: sticky;
+    text-align: center; }
+
+/** PAGINA CONTACTO **/
+.row g-3 {
+  margin: 20%; }
+
+/** PAGINA QUIENES SOMOS **/
+/** PAGINA "QUIENES SOMOS"  **/
+.principal_section_quienes_somos {
+  display: flexbox;
+  width: 100%;
+  justify-items: center; }
+
+.titulo_quienes_somos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%;
+  padding-bottom: 2%;
+  font-size: 1.25rem; }
+
+.video_quienes_somos {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 30%; }
+
+.video_quienes_somos iframe {
+  align-items: center;
+  position: -ms-page; }
+
+.video_intro {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 3.125rem;
+  width: 80%;
+  height: 100%;
+  border: 0; }
+
+.descrip_quienes_somos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding: 6.25rem 6.25rem; }
+
+.descrip_quienes_somos p {
+  text-align: center;
+  font-size: 1.125rem; }
