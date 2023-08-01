@@ -13,6 +13,7 @@
   align-content: baseline;
   padding: .3125rem .3125rem;
   background-color: #728CBD;
+  background-size: initial;
   font-size: 1rem;
   color: #ffffff; }
 
@@ -38,7 +39,8 @@
 
 .rrss ul {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  margin: 0%; }
 
 .rrss ul li {
   display: flex;
@@ -59,19 +61,29 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  margin: .625rem 0rem 3.125rem 0rem; }
+  margin: .625rem 0rem 3.125rem 0rem;
+  font-style: none;
+  text-decoration: none; }
 
 .logo img {
   max-height: 3.75rem; }
 
 .navbar {
+  display: flex;
   list-style: none;
   align-items: center;
   font-size: 1.25rem;
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  row-gap: 1.25rem; }
+  flex-direction: col;
+  gap: 1.25rem;
+  row-gap: 1.25rem;
+  /*
+    list-style: none;
+    align-items: center;
+    font-size: 1.25rem;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    row-gap: 1.25rem;*/ }
 
 .navbar li a:hover {
   color: grey;
@@ -86,60 +98,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain; }
-
-/* TARJETAS PRODUCTOS*/
-.titulo_productos_destacados {
-  display: flex;
-  justify-content: center;
-  padding: 3.125rem 0rem 1.875rem 0rem; }
-
-.cards_grid {
-  display: grid;
-  grid-auto-rows: 22rem;
-  grid-template-rows: repeat(auto-fill, minmax(15rem, 1fr));
-  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-  background-color: #F2EFE9;
-  justify-content: center;
-  gap: 1.25rem;
-  padding: 5% 10%; }
-
-.card div img {
-  display: grid;
-  width: 100%;
-  padding: 10%; }
-
-.titulo_pd {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  grid-column-start: 3;
-  grid-column-end: 5; }
-
-.card_image {
-  overflow: scroll; }
-
-.cards_grid article h4 {
-  display: grid;
-  justify-content: center; }
-
-.card p {
-  display: grid;
-  background-size: contain;
-  text-align: center; }
-
-/* SECCION COMO LLEGAR (ubicacion) */
-.como_llegar {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 3.125rem 0rem 1.875rem 0rem; }
-
-.mapa {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 3.125rem 0rem 4.375rem 0rem;
-  position: relative; }
 
 /* FOOTER (TARJETAS DEL PIE DE PAGINA) */
 footer {
@@ -202,6 +160,181 @@ footer {
   text-align: center;
   width: 11.875rem; }
 
+/** PAGINA INDEX**/
+/* TARJETAS PRODUCTOS*/
+.titulo_productos_destacados {
+  display: flex;
+  justify-content: center;
+  padding: 3.125rem 0rem 1.875rem 0rem; }
+
+.cards_grid, .tienda_prod {
+  display: grid;
+  grid-auto-rows: min-content;
+  grid-template-rows: repeat(auto-fill, minmax(15rem, 2fr));
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 2fr));
+  background-color: #F2EFE9;
+  justify-content: center;
+  gap: 1.25rem;
+  padding: 5% 10% 5% 10%;
+  /*display: grid;
+    grid-auto-rows: 22rem;
+    grid-template-rows: repeat(auto-fill, minmax(15rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));    
+    background-color: #F2EFE9;
+    justify-content: center;
+    gap: 1.25rem;
+    padding: 5% 10%;*/ }
+
+.card div img {
+  display: grid;
+  width: 100%;
+  padding: 10%; }
+
+.titulo_pd {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-column-start: 3;
+  grid-column-end: 5; }
+
+.card_image {
+  overflow: scroll; }
+
+.cards_grid article h4, .tienda_prod article h4 {
+  display: grid;
+  justify-content: center; }
+
+.card p {
+  display: grid;
+  background-size: contain;
+  text-align: center; }
+
+/* SECCION COMO LLEGAR (ubicacion) */
+.como_llegar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 3.125rem 0rem 1.875rem 0rem; }
+
+.mapa {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 3.125rem 0rem 4.375rem 0rem;
+  position: relative; }
+
+/** PAGINA QUIENES SOMOS **/
+/** PAGINA "QUIENES SOMOS"  **/
+.principal_section_quienes_somos {
+  display: flexbox;
+  width: 100%;
+  justify-items: center; }
+
+.titulo_quienes_somos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%;
+  padding-bottom: 2%;
+  font-size: 1.25rem; }
+
+.video_quienes_somos {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 30%; }
+
+.video_quienes_somos iframe {
+  align-items: center;
+  position: -ms-page; }
+
+.video_intro {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 3.125rem;
+  width: 80%;
+  height: 100%;
+  border: 0; }
+
+.descrip_quienes_somos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding: 6.25rem 6.25rem; }
+
+.descrip_quienes_somos p {
+  text-align: center;
+  font-size: 1.125rem; }
+
+/** PAGINA TIENDA **/
+.cuerpo_tienda {
+  justify-content: center; }
+
+.t_productos_tienda {
+  padding: 1.25rem 0rem 5rem 0rem; }
+  .t_productos_tienda h2 {
+    display: flex;
+    justify-content: center; }
+
+.tienda_prod .t_cards {
+  height: 100%; }
+  .tienda_prod .t_cards div img {
+    display: grid;
+    width: 100%;
+    padding: 10%; }
+  .tienda_prod .t_cards h4 {
+    display: grid;
+    justify-self: center;
+    font-size: 1.25rem;
+    text-justify: distribute; }
+  .tienda_prod .t_cards p {
+    text-align: center; }
+
+.cards_grid h4, .tienda_prod h4 {
+  display: block;
+  margin-inline-start: .125rem;
+  margin-inline-end: .125rem; }
+
+/** PAGINA HOTELES**/
+.main_section_hoteles {
+  display: flex;
+  width: 100%;
+  padding-left: 15%;
+  padding-right: 15%; }
+  .main_section_hoteles div h2 {
+    margin-bottom: 3.125rem; }
+
+.hoteles article {
+  background: #728cbd;
+  background: linear-gradient(311deg, #728cbd 0%, rgba(242, 239, 233, 0.877188) 80%, #728cbd 99%);
+  background-size: contain;
+  margin: .625rem;
+  border-radius: .3125rem; }
+
+.hotel_1 div img {
+  max-width: 12.5rem;
+  padding: 3.125rem 0rem 3.125rem 0rem; }
+
+.hotel_2 div img {
+  max-width: 6.25rem;
+  padding: 3.125rem 0rem 3.125rem 0rem; }
+
+.hotel_3 img {
+  max-width: 12.5rem;
+  padding: 3.125rem 0rem 3.125rem 0rem; }
+
+.hotel_4 img {
+  max-width: 12.5rem;
+  padding: 3.125rem 0rem 3.125rem 0rem; }
+
+/** PAGINA CONTACTO **/
+.row g-3 {
+  margin: 20%; }
+
 /** MEDIA QUERY **/
 /* Responsive 1024 (ANCHO) */
 @media (max-width: 1024px) {
@@ -257,7 +390,22 @@ footer {
     margin: 10%;
     padding: 0%; }
     div.descrip_quienes_somos div p {
-      font-size: 1rem; } }
+      font-size: 1rem; }
+  .main_section_hoteles {
+    width: 100%;
+    margin: 0rem; }
+  .hoteles article {
+    display: flex;
+    flex-direction: column;
+    padding: .625rem 0rem;
+    align-items: center; }
+    .hoteles article div img {
+      width: 12.5rem;
+      justify-content: center; }
+    .hoteles article div h3 {
+      text-align: center; }
+    .hoteles article div p {
+      text-align: center; } }
 
 /* Mobile Responsive 375 (ANCHO) */
 @media (max-width: 375px) {
@@ -287,115 +435,9 @@ footer {
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas: "col1" "col2" "col3" "col4"; }
   .video_intro {
-    width: 18.75rem; } }
-
-/** PAGINA HOTELES**/
-.main_section_hoteles {
-  display: flex;
-  with: 100%;
-  padding-left: 15%;
-  padding-right: 15%; }
-
-.hotel_1 div img {
-  max-height: 12.5rem; }
-
-.hotel_2 div img {
-  max-height: 12.5rem; }
-
-.hotel_3 img {
-  max-height: 12.5rem; }
-
-.hotel_4 img {
-  max-height: 12.5rem; }
-
-/*
-div{
-    max-height: 6.25rem;
-}
-*/
-/** PAGINA TIENDA **/
-.cuerpo_tienda {
-  justify-content: center; }
-
-.t_productos_tienda {
-  padding: 1.25rem 0rem 5rem 0rem; }
-  .t_productos_tienda h2 {
-    display: flex;
-    justify-content: center; }
-
-.tienda_prod {
-  display: grid;
-  grid-auto-rows: 22rem;
-  grid-template-rows: repeat(auto-fill, minmax(15rem, 1fr));
-  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-  background-color: #F2EFE9;
-  justify-content: center;
-  gap: 1.25rem;
-  padding: 5% 10%;
-  overflow: scroll; }
-
-.t_cards {
-  display: grid;
-  justify-content: center; }
-  .t_cards div img {
-    display: grid;
-    width: 100%;
-    padding: 10%; }
-  .t_cards h4 {
-    display: grid;
-    justify-content: center; }
-  .t_cards p {
-    display: grid;
-    position: sticky;
-    text-align: center; }
-
-/** PAGINA CONTACTO **/
-.row g-3 {
-  margin: 20%; }
-
-/** PAGINA QUIENES SOMOS **/
-/** PAGINA "QUIENES SOMOS"  **/
-.principal_section_quienes_somos {
-  display: flexbox;
-  width: 100%;
-  justify-items: center; }
-
-.titulo_quienes_somos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 5%;
-  padding-bottom: 2%;
-  font-size: 1.25rem; }
-
-.video_quienes_somos {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-  padding: 30%; }
-
-.video_quienes_somos iframe {
-  align-items: center;
-  position: -ms-page; }
-
-.video_intro {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  top: 3.125rem;
-  width: 80%;
-  height: 100%;
-  border: 0; }
-
-.descrip_quienes_somos {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, 1fr);
-  justify-content: center;
-  align-items: center;
-  padding: 6.25rem 6.25rem; }
-
-.descrip_quienes_somos p {
-  text-align: center;
-  font-size: 1.125rem; }
+    width: 18.75rem; }
+  .hoteles article {
+    padding: .625rem 0rem; }
+    .hoteles article div img {
+      width: 12.5rem;
+      justify-content: center; } }

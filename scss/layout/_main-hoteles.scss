@@ -1,31 +1,44 @@
 .main_section_hoteles{
     display: flex;
-    with: 100%;
+    width: 100%;
     padding-left: 15%;
     padding-right: 15%;
+
+    div{
+
+        h2{
+            margin-bottom: 3.125rem;
+        }
+    }
 }
 
+.hoteles article{
+    background: rgb(114,140,189);
+    background: linear-gradient(311deg, rgba(114,140,189,1) 0%, rgba(242,239,233,0.87718837535014) 80%, rgba(114,140,189,1) 99%);
+    background-size: contain;
+    margin: .625rem;
+    border-radius: .3125rem;
+}
 
 .hotel_1 div img{    
-    max-height: 12.5rem;
+    max-width: 12.5rem;
+    padding: 3.125rem 0rem 3.125rem 0rem;
 
 }
 
 .hotel_2 div img{    
-    max-height: 12.5rem;
+    max-width: 6.25rem;
+    padding: 3.125rem 0rem 3.125rem 0rem;
 
 }
 
 .hotel_3 img{    
-    max-height: 12.5rem;
+    max-width: 12.5rem;
+    padding: 3.125rem 0rem 3.125rem 0rem;
 }
 
 .hotel_4 img{    
-    max-height: 12.5rem;
+    max-width: 12.5rem;
+    padding: 3.125rem 0rem 3.125rem 0rem;
 }
 
-/*
-div{
-    max-height: 6.25rem;
-}
-*/

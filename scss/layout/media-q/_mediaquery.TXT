@@ -107,6 +107,23 @@
                         }
                     }
             }
+            .main_section_hoteles{
+                width: 100%;
+            }
+                .hoteles {
+            
+                    article {
+                        padding: .625rem 0rem;
+            
+                        div {
+            
+                            img {
+                                width: 12.5rem;
+                                justify-content: center;
+                            }
+                        }
+                    }
+                }
         }
 
 
@@ -151,8 +168,6 @@
         height: 60vmin;
     }
 
-    .cuerpo {}
-
     footer {
         width: 100vw;
         height: max-content;
@@ -169,9 +184,24 @@
         ;
     }
 
-    .titulo_quienes_somos {}
-
     .video_intro {
         width: 18.75rem;
     }
+
+    .main_section_hoteles{
+    }
+        .hoteles {
+    
+            article {
+                padding: .625rem 0rem;
+    
+                div {
+    
+                    img {
+                        width: 12.5rem;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
 }
