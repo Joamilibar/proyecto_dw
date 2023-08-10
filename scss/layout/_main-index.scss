@@ -8,14 +8,13 @@
 
 .cards_grid {
     @include tgrids;
-    /*display: grid;
-    grid-auto-rows: 22rem;
-    grid-template-rows: repeat(auto-fill, minmax(15rem, 1fr));
-    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));    
-    background-color: #F2EFE9;
-    justify-content: center;
-    gap: 1.25rem;
-    padding: 5% 10%;*/
+    transition: width 2s, height 2s, transform 2s;
+
+    article:hover {
+        width: 102%;
+        height: 102%;
+        justify-content: center;
+    }
 }
 
 .card div img {
@@ -36,7 +35,7 @@
     overflow: scroll;
 }
 
-.cards_grid article h4{
+.cards_grid article h4 {
     display: grid;
     justify-content: center;
 }
@@ -65,5 +64,3 @@
     margin: 3.125rem 0rem 4.375rem 0rem;
     position: relative;
 }
-
-

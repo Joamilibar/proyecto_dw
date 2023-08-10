@@ -68,6 +68,10 @@
     margin: .625rem 0rem 3.125rem 0rem;
     font-style: none;
     text-decoration: none;
+
+    div {
+        animation: my
+    }
 }
 
 
@@ -77,20 +81,24 @@
 }
 
 .navbar {
-    @include lnavbar(none,center,1.25rem,col,1.25rem,1.25rem);
-    /*
-    list-style: none;
-    align-items: center;
-    font-size: 1.25rem;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    row-gap: 1.25rem;*/
-}
+    @include lnavbar(none, center, 1.25rem, col, 1.25rem, 1.25rem);
 
-.navbar li a:hover {
-    color: grey;
-    text-shadow: .125rem .125rem .125rem lightblue;
+    li {
+        a {
+            text-decoration: none;
+            color: rgb(146, 132, 80);
+            text-shadow: .125rem .125rem .125rem lightblue;
+        }
+
+        a:hover {
+            color: #3f62a2;
+        }
+
+        a:active {
+            text-decoration: underline;
+        }
+
+    }
 }
 
 
@@ -105,5 +113,3 @@
     background-position: center;
     background-size: contain;
 }
-
-

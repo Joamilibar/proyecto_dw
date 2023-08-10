@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box; }
 
-@font-face {
+body {
   font-family: 'Cormorant Garamond', serif;
   src: url(../assets/fonts/Cormorant_Garamond/CormorantGaramond-Regular.ttf); }
 
@@ -64,6 +64,8 @@
   margin: .625rem 0rem 3.125rem 0rem;
   font-style: none;
   text-decoration: none; }
+  .nav div {
+    animation: my; }
 
 .logo img {
   max-height: 3.75rem; }
@@ -75,19 +77,15 @@
   font-size: 1.25rem;
   flex-direction: col;
   gap: 1.25rem;
-  row-gap: 1.25rem;
-  /*
-    list-style: none;
-    align-items: center;
-    font-size: 1.25rem;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    row-gap: 1.25rem;*/ }
-
-.navbar li a:hover {
-  color: grey;
-  text-shadow: .125rem .125rem .125rem lightblue; }
+  row-gap: 1.25rem; }
+  .navbar li a {
+    text-decoration: none;
+    color: #928450;
+    text-shadow: .125rem .125rem .125rem lightblue; }
+  .navbar li a:hover {
+    color: #3f62a2; }
+  .navbar li a:active {
+    text-decoration: underline; }
 
 /* BANNER PÁGINA PRINCIPAL */
 .principal_section {
@@ -170,20 +168,18 @@ footer {
 .cards_grid, .tienda_prod {
   display: grid;
   grid-auto-rows: min-content;
-  grid-template-rows: repeat(auto-fill, minmax(15rem, 2fr));
-  grid-template-columns: repeat(auto-fill, minmax(15rem, 2fr));
+  grid-template-rows: repeat(auto-fill, minmax(15rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   background-color: #F2EFE9;
+  background-size: contain;
   justify-content: center;
   gap: 1.25rem;
   padding: 5% 10% 5% 10%;
-  /*display: grid;
-    grid-auto-rows: 22rem;
-    grid-template-rows: repeat(auto-fill, minmax(15rem, 1fr));
-    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));    
-    background-color: #F2EFE9;
-    justify-content: center;
-    gap: 1.25rem;
-    padding: 5% 10%;*/ }
+  transition: width 2s, height 2s, transform 2s; }
+  .cards_grid article:hover, .tienda_prod article:hover {
+    width: 102%;
+    height: 102%;
+    justify-content: center; }
 
 .card div img {
   display: grid;
@@ -234,9 +230,8 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 5%;
-  padding-bottom: 2%;
-  font-size: 1.25rem; }
+  font-size: 1.25rem;
+  margin-bottom: 5%; }
 
 .video_quienes_somos {
   display: flex;
@@ -276,9 +271,6 @@ footer {
 
 .t_productos_tienda {
   padding: 1.25rem 0rem 5rem 0rem; }
-  .t_productos_tienda h2 {
-    display: flex;
-    justify-content: center; }
 
 .tienda_prod .t_cards {
   height: 100%; }
@@ -305,8 +297,8 @@ footer {
   width: 100%;
   padding-left: 15%;
   padding-right: 15%; }
-  .main_section_hoteles div h2 {
-    margin-bottom: 3.125rem; }
+  .main_section_hoteles div h1 {
+    margin-bottom: 5%; }
 
 .hoteles article {
   background: #728cbd;
@@ -332,6 +324,9 @@ footer {
   padding: 3.125rem 0rem 3.125rem 0rem; }
 
 /** PAGINA CONTACTO **/
+.form_contacto {
+  margin-bottom: 5%; }
+
 .row g-3 {
   margin: 20%; }
 
