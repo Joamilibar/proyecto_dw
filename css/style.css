@@ -330,6 +330,14 @@ footer {
 .row g-3 {
   margin: 20%; }
 
+.boton_contacto {
+  display: grid;
+  justify-content: center; }
+  .boton_contacto button {
+    color: ghostwhite;
+    border-color: #928450;
+    background-color: #928450; }
+
 /** MEDIA QUERY **/
 /* Responsive 1024 (ANCHO) */
 @media (max-width: 1024px) {

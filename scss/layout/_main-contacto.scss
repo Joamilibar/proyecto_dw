@@ -1,8 +1,18 @@
-.form_contacto{
+.form_contacto {
     margin-bottom: 5%;
 }
 
-.row g-3{
+.row g-3 {
     margin: 20%;
 }
 
+.boton_contacto {
+    display: grid;
+    justify-content: center;
+
+    button {
+        color: ghostwhite;
+        border-color: #928450;
+        background-color: #928450;
+    }
+}
